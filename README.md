@@ -33,10 +33,10 @@ Git installed on your machine
 
 Installation
 bash# 1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/mlb-dashboard.git
+git clone 
 
 # 2️⃣ Navigate into the project
-cd mlb-dashboard
+
 
 # 3️⃣ Open in your browser
 # Just open index.html — no build step needed! ⚡
