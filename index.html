@@ -13,28 +13,45 @@
     <nav class="navbar">
         <div class="nav-brand">⚾ MLB Dashboard</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="teams.html" class="nav-link">Teams</a></li>
-            <li><a href="players.html" class="nav-link">Players</a></li>
-            <li><a href="stats.html" class="nav-link">Stats</a></li>
+            <li><a href="index.html" class="nav-link active">MLB</a></li>
+            <li><a href="aaa.html" class="nav-link">AAA</a></li>
+            <li><a href="aa.html" class="nav-link">AA</a></li>
+            <li><a href="a-plus.html" class="nav-link">A+</a></li>
+            <li><a href="a.html" class="nav-link">A</a></li>
+            <li><a href="rookie.html" class="nav-link">Rookie</a></li>
         </ul>
+        <!-- NAV BAR RIGHT SECTION -->
+        <div class="nav-right">
+            <div class="nav-search" id="nav-search">
+                <input type="text" id="search-input" class="search-input" placeholder="Search teams, players, etc..." />
+                <button class="search-icon-btn" id="search-toggle">🔍</button>
+            </div>
+            <a href="gamecast.html" class="nav-gamecast">⚡Live Gamecast</a>
+        </div>
     </nav>
 
     <!-- HERO - outside main-content so it stretches full width -->
     <section id="home" class="home-section">
         <div class="home-container">
-            <h1>Welcome to the MLB Dashboard</h1>
-            <p>Your one-stop destination for all things Major League Baseball. Explore teams, players, and stats in an
-                interactive way.</p>
+            <h1>Welcome to the Baseball Analytics Dashboard</h1>
+            <p>Your one-stop Destination for all things Baseball, from MLB to Single-A and More. Explore Teams, Players, and Stats in an
+                Interactive Way.</p>
         </div>
     </section>
 
     <!--  MAIN CONTENT -->
     <main class="main-content">
-        <!-- MLB NEWS -->
         <section class="news-preview">
+            <!-- MLB NEWS -->
             <h2>Latest MLB News</h2>
             <div id="news-list" class="news-list"></div>
+
+            <!-- PAGINATION -->
+            <div class="news-pagination">
+                <button id="news-prev" class="pagination-btn">← Previous</button>
+                <span id="news-page" class="pagination-label">Page 1</span>
+                <button id="news-next" class="pagination-btn">Next →</button>
+            </div>
         </section>
     </main>
 

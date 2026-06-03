@@ -28,11 +28,11 @@ const API = {
     },
 
     async getNews() {
-        const res = await fetch(
-            'https://api.rss2json.com/v1/api.json?rss_url=https://www.mlb.com/feeds/news/rss.xml'
-        );
-        if (!res.ok) throw new Error('Failed to fetch news');
-        const data = await res.json();
-        return data.items || [];
-    }
+    const res = await fetch(
+        'https://newsapi.org/v2/everything?q=MLB+baseball&language=en&sortBy=publishedAt&pageSize=6&apiKey=b5afbb42a8334d97941da11b45a67f76'
+    );
+    if (!res.ok) throw new Error('Failed to fetch news');
+    const data = await res.json();
+    return data.articles || [];
+},
 };
