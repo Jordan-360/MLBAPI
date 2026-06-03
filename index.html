@@ -13,51 +13,45 @@
     <nav class="navbar">
         <div class="nav-brand">⚾ MLB Dashboard</div>
         <ul class="nav-links">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="teams.html" class="nav-link">Teams</a></li>
-            <li><a href="players.html" class="nav-link">Players</a></li>
-            <li><a href="stats.html" class="nav-link">Stats</a></li>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#teams" class="nav-link">Teams</a></li>
+            <li><a href="#players" class="nav-link">Players</a></li>
+            <li><a href="#stats" class="nav-link">Stats</a></li>
         </ul>
     </nav>
+
+    <!-- HERO - outside main-content so it stretches full width -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <h1>Welcome to the MLB Dashboard</h1>
+            <p>Your one-stop destination for all things Major League Baseball. Explore teams, players, and stats in an interactive way.</p>
+        </div>
+    </section>
+
     <!--  MAIN CONTENT -->
     <main class="main-content">
 
-        <section id="home" class="home-section">
-            <div id="home-container" class="section active">
-                <h1>Welcome to the MLB Dashboard</h1>
-                <p>Your one-stop destination for all things Major League Baseball. Explore teams, players, and stats in
-                    an interactive way.</p>
-            </div>
-
-        </section>
-
         <section id="teams" class="teams-section">
-            <div id="teams-container" class="section">
+            <div id="teams-container">
                 <h1>MLB Teams</h1>
                 <p>Discover the 30 teams of Major League Baseball, their histories, and their current rosters.</p>
-                <div id="teams-list" class="teams-list">
-                    <!-- Teams will be dynamically loaded here -->
-                </div>
+                <div id="teams-list" class="teams-list"></div>
             </div>
         </section>
 
         <section id="players" class="players-section">
-            <div id="players-container" class="section">
+            <div id="players-container">
                 <h1>MLB Players</h1>
                 <p>Explore the top players in the league, their stats, and their career highlights.</p>
-                <div id="players-list" class="players-list">
-                    <!-- Players will be dynamically loaded here -->
-                </div>
+                <div id="players-list" class="players-list"></div>
             </div>
         </section>
 
         <section id="stats" class="stats-section">
-            <div id="stats-container" class="section">
+            <div id="stats-container">
                 <h1>MLB Stats</h1>
                 <p>Dive into the latest statistics for teams and players, including batting averages, ERA, and more.</p>
-                <div id="stats-table" class="stats-table">
-                    <!-- Stats will be dynamically loaded here -->
-                </div>
+                <div id="stats-table" class="stats-table"></div>
             </div>
         </section>
 
@@ -70,11 +64,10 @@
 
     <!-- SCRIPTS -->
     <script src="js/api.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/components/teams.js"></script>
     <script src="js/components/players.js"></script>
     <script src="js/components/stats.js"></script>
-    <script src="js/components/teams.js"></script>
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>
