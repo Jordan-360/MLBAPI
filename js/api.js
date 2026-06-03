@@ -26,4 +26,13 @@ const API = {
         const data = await res.json();
         return data.dates?.[0]?.games || [];
     },
+
+    async getNews() {
+        const res = await fetch(
+            'https://api.rss2json.com/v1/api.json?rss_url=https://www.mlb.com/feeds/news/rss.xml'
+        );
+        if (!res.ok) throw new Error('Failed to fetch news');
+        const data = await res.json();
+        return data.items || [];
+    }
 };

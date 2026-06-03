@@ -64,6 +64,24 @@ img {
     display: block;
 }
 
+/* STICKY FOOTER */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    width: 100%;
+}
+
+.teams-section,
+.players-section,
+.stats-section {
+    width: 100%;
+}
+
 /* NAVABR */
 
 .navbar {
@@ -187,9 +205,12 @@ img {
 
 .teams-list,
 .players-list,
-.stats-list {
+.stats-list,
+.news-list,
+.games-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: var(--spacing-md);
 }
 
@@ -239,4 +260,99 @@ img {
     background: var(--bg-secondary);
 }
 
+/* PAGE-HEADER */
+.page-header {
+    background-color: var(--mlb-navy);
+    padding: 40px var(--spacing-xl);
+    border-bottom: 3px solid var(--mlb-red);
+    width: 100%;
+}
 
+.page-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-header p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+/* NEWS SECTION */
+.news-preview h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--mlb-red);
+    display: inline-block;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.news-card {
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+    display: block;
+    color: inherit;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card-body {
+    padding: var(--spacing-md);
+}
+
+.news-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
+.news-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.news-excerpt {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+}
+
+.news-link {
+    font-size: 13px;
+    color: var(--mlb-red);
+    font-weight: 600;
+}
