@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <!--  NAV BAR -->
+    <nav class="navbar">
+        <div class="nav-brand">⚾ MLB Dashboard</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="teams.html" class="nav-link">Teams</a></li>
+            <li><a href="players.html" class="nav-link">Players</a></li>
+            <li><a href="stats.html" class="nav-link">Stats</a></li>
+        </ul>
+    </nav>
     <!--  MAIN CONTENT -->
     <main class="main-content">
 
@@ -18,7 +28,7 @@
                 <p>Your one-stop destination for all things Major League Baseball. Explore teams, players, and stats in
                     an interactive way.</p>
             </div>
-            
+
         </section>
 
         <section id="teams" class="teams-section">
@@ -55,15 +65,15 @@
 
     <!--  FOOTER -->
     <footer class="footer">
-        <p>&copy; <span id="year"></span> 2026 MLB Dashboard. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> MLB Dashboard. All rights reserved.</p>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/components/scores.js"></script>
-    <script src="js/components/standings.js"></script>
     <script src="js/components/players.js"></script>
+    <script src="js/components/stats.js"></script>
+    <script src="js/components/teams.js"></script>
 
 </body>
 

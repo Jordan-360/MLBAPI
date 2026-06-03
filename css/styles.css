@@ -1,0 +1,155 @@
+/* CSS RESET & ROOT VARIABLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    /* MLB BRAND COLORS */
+    --mlb-navy: #001f5b;
+    --mlb-red: #c8102e;
+    --mlb-white: #ffffff;
+
+    /* UI COLORS */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f4f5f7;
+    --bg-teritary: #eaecf0;
+
+    /* TEXT COLORS */
+    --text-primary: #1a1a2e;
+    --text-secondary: #6b7280;
+    --text-muted: #9ca3af;
+
+    /* BORDER */
+    --border: #e5e7eb;
+
+    /* SPACING */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px; 
+    --spacing-xl: 32px;
+
+    /* BORDER RADIUS */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* TRANSITION */
+    --transition: all 0.2s ease;
+}
+
+/* BASE STYLES */
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+ul { 
+    list-style: none;
+}
+
+img { 
+    max-width: 100%;
+    display: block;
+}
+
+/* NAVABR */
+
+.navbar {
+    background-color: var(--mlb-navy);
+    color: var(--mlb-white);
+    padding: 0 var(--spacing-xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: 3px solid var(--mlb-red);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand { 
+    color: var(--mlb-white);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.nav-links a {
+    color: rbga(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--mlb-white);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-links a.active {
+    color: var(--mlb-white);
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--mlb-red);
+}
+
+
+/* HERO SECTION */
+
+.home-section {
+    background-color: var(--mlb-navy);
+    padding: var(--spacing-xl) var(spacing-xl);
+    border-bottom: 3px solid var(--mlb-red);
+}
+
+.home-section h1 { 
+    color: var(--mlb-white);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.home-section p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    max-width: 520px;
+    line-height: 1.7;
+}
+
+/* MAIN CONTENT */ 
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg) var(--spacing-xl);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--mlb-navy);
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: var(--spacing-lg);
+    font-size: 13px;
+    border-top: 3px solid var(--mlb-red);
+    margin-top: var(--spacing-xl);
+}
