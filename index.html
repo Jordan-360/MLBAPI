@@ -34,25 +34,37 @@
     <section id="home" class="home-section">
         <div class="home-container">
             <h1>Welcome to the Baseball Analytics Dashboard</h1>
-            <p>Your one-stop Destination for all things Baseball, from MLB to Single-A and More. Explore Teams, Players, and Stats in an
+            <p>Your one-stop Destination for all things Baseball, from MLB to Single-A and More. Explore Teams, Players,
+                and Stats in an
                 Interactive Way.</p>
         </div>
     </section>
 
     <!--  MAIN CONTENT -->
     <main class="main-content">
-        <section class="news-preview">
-            <!-- MLB NEWS -->
-            <h2>Latest MLB News</h2>
-            <div id="news-list" class="news-list"></div>
+        <div class="home-grid">
+            <!-- LEFT COLUMN -->
+            <div class="home-left"></div>
+            
+            <!-- CENTER COLUMN NEWS -->
+            <section class="news-preview">
+                <!-- MLB NEWS -->
+                <h2>Latest MLB News</h2>
+                <div id="news-list" class="news-list"></div>
+                <!-- PAGINATION -->
+                <div class="news-pagination">
+                    <button id="news-prev" class="pagination-btn">← Previous</button>
+                    <span id="news-page" class="pagination-label">Page 1</span>
+                    <button id="news-next" class="pagination-btn">Next →</button>
+                </div>
+            </section>
 
-            <!-- PAGINATION -->
-            <div class="news-pagination">
-                <button id="news-prev" class="pagination-btn">← Previous</button>
-                <span id="news-page" class="pagination-label">Page 1</span>
-                <button id="news-next" class="pagination-btn">Next →</button>
-            </div>
-        </section>
+            <!--RIGHT COLUMN LEAGUE LEADERS -->
+            <aside class="league-leaders">
+                <h3>League Leaders</h3>
+                <div id="leaders-list"></div>
+            </aside>
+        </div>
     </main>
 
     <!--  FOOTER -->
