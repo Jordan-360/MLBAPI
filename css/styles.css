@@ -418,7 +418,7 @@ body {
 .news-list {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 5fr 5fr 5fr;
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
 }
@@ -541,10 +541,10 @@ body {
     text-align: center;
 }
 
-/* LEAGUE LEADERS SIDEBAR */
+/* 3-COLUMN HOME LAYOUT */
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 660px) 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     gap: var(--spacing-xl);
     align-items: start;
     width: 100%;
@@ -552,14 +552,16 @@ body {
     margin: 0 auto;
 }
 
-.home-left {
-    max-width: 300px;
-    margin-left: auto;
+
+/* LEAGUE LEADERS */
+.league-leaders {
+    position: relative;
+    top: 80px;
+    align-self: start;
 }
 
-.league-leaders {
-    max-width: 300px;
-    position: sticky;
-    top: 80px;
+/* HOME LEFT SIDE */
+
+.home-left { 
     align-self: start;
 }

@@ -28,11 +28,20 @@ const API = {
     },
 
     async getNews() {
-    const res = await fetch(
-        'https://newsapi.org/v2/everything?q=MLB+baseball&language=en&sortBy=publishedAt&pageSize=6&apiKey=b5afbb42a8334d97941da11b45a67f76'
-    );
-    if (!res.ok) throw new Error('Failed to fetch news');
-    const data = await res.json();
-    return data.articles || [];
-},
+        const res = await fetch(
+            'https://newsapi.org/v2/everything?q=MLB+baseball&language=en&sortBy=publishedAt&pageSize=6&apiKey=b5afbb42a8334d97941da11b45a67f76'
+        );
+        if (!res.ok) throw new Error('Failed to fetch news');
+        const data = await res.json();
+        return data.articles || [];
+    },
+
+    async getLeagueLeaders() { 
+        const res = await fetch(
+
+        )
+        if(!res.ok) throw new Error('Failed to fetch League Leaders');
+        const data = await res.json();
+        return data.league_leaders || [];
+    }
 };
