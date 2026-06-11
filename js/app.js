@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
+
     loadNews();
+    loadLeagueLeaders();
 
     //SEARCH
     const searchToggle = document.getElementById('search-toggle');

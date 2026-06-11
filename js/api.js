@@ -35,13 +35,4 @@ const API = {
         const data = await res.json();
         return data.articles || [];
     },
-
-    async getLeagueLeaders() { 
-        const res = await fetch(
-
-        )
-        if(!res.ok) throw new Error('Failed to fetch League Leaders');
-        const data = await res.json();
-        return data.league_leaders || [];
-    }
 };
