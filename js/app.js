@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadNews();
     loadLeagueLeaders();
+    loadGamesToday();
 
     //SEARCH
     const searchToggle = document.getElementById('search-toggle');

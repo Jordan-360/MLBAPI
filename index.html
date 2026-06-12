@@ -43,8 +43,13 @@
     <!--  MAIN CONTENT -->
     <main class="main-content">
         <div class="home-grid">
+
             <!-- LEFT COLUMN -->
-            <div class="home-left"></div>
+            <div class="games-today-column">
+                <h3>Games Today</h3>
+                <div id="games-today">
+                </div>
+            </div>
             
             <!-- CENTER COLUMN NEWS -->
             <section class="news-preview">
@@ -64,6 +69,7 @@
                 <h3>League Leaders</h3>
                 <div id="leaders-list"></div>
             </aside>
+
         </div>
     </main>
 
@@ -75,8 +81,9 @@
     <!-- SCRIPTS -->
     <script src="js/api.js"></script>
     <script src="js/components/news.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/components/league_leaders.js"></script>
+    <script src="js/components/gamesToday.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

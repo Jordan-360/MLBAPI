@@ -21,7 +21,7 @@ const API = {
 
     async getSchedule(date) {
         const d = date || new Date().toISOString().split('T')[0];
-        const res = await fetch(`${BASE_URL}/schedule?sportId=1&date=${d}`);
+        const res = await fetch(`${BASE_URL}/schedule?sportId=1&date=${d}&hydrate=team`);
         if (!res.ok) throw new Error('Failed to fetch schedule');
         const data = await res.json();
         return data.dates?.[0]?.games || [];
@@ -34,5 +34,5 @@ const API = {
         if (!res.ok) throw new Error('Failed to fetch news');
         const data = await res.json();
         return data.articles || [];
-    },
+    }
 };

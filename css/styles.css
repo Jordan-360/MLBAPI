@@ -555,12 +555,156 @@ body {
 
 /* LEAGUE LEADERS */
 .league-leaders {
+    margin-top: 104px;
     position: relative;
-    top: 80px;
     align-self: start;
+    padding: var(--spacing-lg);
+    background: var(--bg-primary);
+    border: 0.5px solid  var(--border);
+    border-radius: var(--radius-lg);
 }
 
-/* HOME LEFT SIDE */
-.home-left { 
+/* LEAGUE LEADERS SIDEBAR */
+.league-leaders h3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--mlb-red);
+    display: block;
+}
+
+.leader-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 10px 0;
+    border-bottom: 0.5px solid var(--border);
+}
+
+.leader-row:last-child {
+    border-bottom: none;
+}
+
+.leader-rank {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mlb-red);
+    min-width: 24px;
+}
+
+.leader-info {
+    flex: 1;
+}
+
+.leader-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.leader-team {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.leader-avg {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mlb-navy);
+}
+
+/* GAMES TODAY */
+.games-today-column { 
+    margin-top: 104px;
+    position: relative;
     align-self: start;
+    padding: var(--spacing-lg);
+    background: var(--bg-primary);
+    border: 0.5px solid  var(--border);
+    border-radius: var(--radius-lg);
+}
+
+/* GAMES TODAY SIDE BAR */
+.games-today-column h3 { 
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--mlb-red);
+    display: block;
+}
+
+.games-today-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 10px 0;
+    border-bottom: 0.5px solid var(--border);
+}
+
+.games-today-row:last-child {
+    border-bottom: none;
+}
+
+.game-number {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mlb-red);
+    min-width: 24px;
+}
+
+.games-today-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.games-today-team-name-home,
+.games-today-team-name-away {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.games-today-team-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    min-width: 28px;
+}
+
+.games-today-status {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--mlb-navy);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.games-today-team {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.games-today-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.games-today-record {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 500;
+    white-space: nowrap;
 }
